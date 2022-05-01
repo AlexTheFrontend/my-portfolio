@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import sanityClient from "../client.js";
+import image from "../images/bg4.jpeg";
 
 export default function Project() {
   const [projectData, setProjectData] = useState(null);
@@ -25,7 +26,12 @@ export default function Project() {
       .catch(console.error);
   }, []);
   return (
-    <main className="bg-gree-100 min-h-screen p-12">
+    <main className="bg-gree-100 min-h-screen">
+      <img
+        src={image}
+        alt="Auckland city"
+        className="absolute object-cover w-full h-full p-0"
+      />
       <section className="container mx-auto">
         <h1 className="text-5xl flex justify-center cursive">My Projects</h1>
         <h2 className="text-lg text-gray-600 flex justify-center mb-12">
