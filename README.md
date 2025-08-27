@@ -1,70 +1,98 @@
-# Getting Started with Create React App
+# My Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern React-based personal portfolio website with TypeScript support, powered by Bun and Sanity CMS.
 
-## Available Scripts
+## 🚀 Tech Stack
 
-In the project directory, you can run:
+- **React 18** with TypeScript
+- **Bun** - Fast JavaScript runtime and package manager
+- **Tailwind CSS v4** - Modern utility-first CSS framework
+- **Sanity CMS** - Headless content management system
+- **React Router** - Client-side routing
+- **ESLint + Prettier** - Code quality and formatting
+
+<<<<<<< Updated upstream
+### `bun run dev`
+=======
+## 📦 Prerequisites
+>>>>>>> Stashed changes
+
+Make sure you have [Bun](https://bun.sh) installed on your machine:
+
+```bash
+curl -fsSL https://bun.sh/install | bash
+```
+
+## 🛠 Installation
+
+1. Clone the repository
+2. Install dependencies:
+   ```bash
+   bun install
+   ```
+
+## 🏃‍♂️ Available Scripts
 
 ### `bun run dev`
+Runs the app in development mode. Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### `bun run build`
+Builds the app for production to the `build` folder. The build is optimized and minified.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### `bun run test`
+Launches the test runner in interactive watch mode.
 
-### `npm test`
+### `bun run lint`
+Runs ESLint to check for code quality issues.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### `bun run format`
+Formats code using Prettier.
 
-### `npm run build`
+### `bun run deploy`
+Deploys the Sanity studio.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### `bun run generate-types`
+Generates TypeScript types from GraphQL schema.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🎨 Features
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **Modern Design** - Clean, responsive portfolio layout
+- **Content Management** - Easy content updates via Sanity CMS
+- **Type Safety** - Full TypeScript support with proper type definitions
+- **Performance** - Optimized with React 18 and modern build tools
+- **Developer Experience** - ESLint, Prettier, and hot reload
 
-### `npm run eject`
+## 📁 Project Structure
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```
+src/
+├── components/          # React components
+├── images/             # Static images
+├── types/              # TypeScript type definitions
+├── App.tsx            # Main app component
+└── index.tsx          # App entry point
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 🔧 Configuration
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+The project uses modern tooling configurations:
+- **TypeScript** - `tsconfig.json`
+- **Tailwind CSS** - `tailwind.config.js`
+- **PostCSS** - `postcss.config.js`
+- **ESLint** - `.eslintrc.js`
+- **Prettier** - `.prettierrc`
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 🚀 Deployment
 
-## Learn More
+The app can be deployed to any static hosting service like Vercel, Netlify, or GitHub Pages after running:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+bun run build
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 📝 Learn More
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- [Bun Documentation](https://bun.sh/docs)
+- [React Documentation](https://reactjs.org/)
+- [Tailwind CSS Documentation](https://tailwindcss.com/)
+- [Sanity Documentation](https://www.sanity.io/docs)

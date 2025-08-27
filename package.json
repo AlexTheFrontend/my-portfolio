@@ -2,31 +2,33 @@
   "name": "my-portfolio",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "22.x"
+  },
   "dependencies": {
-    "@graphql-codegen/cli": "^2.6.2",
     "@sanity/block-content-to-react": "^3.0.0",
     "@sanity/cli": "^2.28.0",
     "@sanity/client": "^3.2.0",
     "@sanity/image-url": "^1.0.1",
-    "@testing-library/jest-dom": "^5.16.2",
-    "@testing-library/react": "^12.1.4",
-    "@testing-library/user-event": "^13.5.0",
+    "@tailwindcss/postcss": "^4.1.12",
     "axios": "^0.26.1",
     "graphql": "^16.3.0",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "react-router-dom": "^6.2.2",
-    "react-scripts": "5.0.0",
+    "react-scripts": "^5.0.1",
     "react-social-icons": "^5.11.0",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "dev": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "deploy": "sanity deploy",
-    "generate-types": "graphql-codegen --config codegen.yml"
+    "dev": "bun react-scripts start",
+    "build": "bun react-scripts build",
+    "test": "bun react-scripts test",
+    "eject": "bun react-scripts eject",
+    "deploy": "bun sanity deploy",
+    "generate-types": "bun graphql-codegen --config codegen.yml",
+    "lint": "bun eslint src/**/*.{js,jsx,ts,tsx}",
+    "format": "bun prettier --write src/**/*.{js,jsx,ts,tsx,json,css,md}"
   },
   "eslintConfig": {
     "extends": [
@@ -52,9 +54,22 @@
     "@graphql-codegen/typescript": "2.4.8",
     "@graphql-codegen/typescript-operations": "2.3.5",
     "@graphql-codegen/typescript-react-apollo": "3.2.11",
-    "@tailwindcss/typography": "^0.5.2",
-    "autoprefixer": "^10.4.4",
-    "postcss": "^8.4.12",
-    "tailwindcss": "^3.0.23"
+    "@tailwindcss/typography": "^0.5.16",
+    "@testing-library/jest-dom": "^6.8.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^14.6.1",
+    "@types/node": "^24.3.0",
+    "@types/react": "^19.1.11",
+    "@types/react-dom": "^19.1.8",
+    "@typescript-eslint/eslint-plugin": "^7.18.0",
+    "@typescript-eslint/parser": "^7.18.0",
+    "autoprefixer": "^10.4.21",
+    "eslint": "^9.34.0",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "postcss": "^8.5.6",
+    "prettier": "^3.6.2",
+    "tailwindcss": "^4.1.12",
+    "typescript": "^5.9.2"
   }
 }

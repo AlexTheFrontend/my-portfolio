@@ -2,8 +2,18 @@ import React, { useEffect, useState } from "react";
 import sanityClient from "../client.js";
 import image from "../images/bg4.jpeg";
 
+interface ProjectData {
+  title: string;
+  date: string;
+  place: string;
+  description: string;
+  projectType: string;
+  link: string;
+  tags: string[];
+}
+
 export default function Project() {
-  const [projectData, setProjectData] = useState(null);
+  const [projectData, setProjectData] = useState<ProjectData[] | null>(null);
 
   useEffect(() => {
     sanityClient
@@ -20,7 +30,7 @@ export default function Project() {
     }
     `
       )
-      .then((data) => {
+      .then((data: ProjectData[]) => {
         setProjectData(data);
       })
       .catch(console.error);
@@ -40,7 +50,7 @@ export default function Project() {
         <section className="grid grid-cols-2 gap-8">
           {projectData &&
             projectData.map((project, index) => (
-              <article className="relative rounded-lg shadow-xl bg-white p-16">
+              <article key={index} className="relative rounded-lg shadow-xl bg-white p-16">
                 <h3 className="text-gray-800 text-3xl font-bold mb-2 hover:text-red-700">
                   <a
                     href={project.link}
