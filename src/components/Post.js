@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import sanityClient from "../client";
+import BlockContent from "@sanity/block-content-to-react";
 
 export default function Post() {
   const [postData, setPostData] = useState(null);
@@ -52,6 +53,10 @@ export default function Post() {
                       <h3 className="text-grey-800 text-lg font-blog px-3 bg-red-700 text-red-100 bg-opacity-75 rounded">
                         {post.title}
                       </h3>
+                      {/* TODO Check the right rendering */}
+                      <BlockContent>
+                        {post.data}
+                      </BlockContent>
                     </span>
                   </span>
                 </Link>

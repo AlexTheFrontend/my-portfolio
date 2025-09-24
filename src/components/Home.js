@@ -1,5 +1,5 @@
 import React from "react";
-import image from "../images/bg.jpg";
+import image from "../images/new-bg.png";
 
 export default function Home() {
   return (
@@ -11,7 +11,7 @@ export default function Home() {
       />
       <section className="relative flex justify-center min-h-screen pt-12 lg:pt-64 px-8">
         <h1 className="text-7xl text-white font-bold cursive leading-none lg:leadinng-snug home-name ">
-          Kia ora, I'm Alexander!
+          Kia ora, I'm Sasha!
         </h1>
       </section>
     </main>
