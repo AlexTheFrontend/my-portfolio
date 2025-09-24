@@ -12,7 +12,7 @@ export default function NavBar() {
             exact
             className="inline-flex items-center py-6 px-3 mr-4 text-white hover:text-sky-600 transition-colors text-4xl font-bold cursive tracking-widest"
           >
-            Alexander
+            Sasha
           </NavLink>
           <NavLink
             to="/post"
