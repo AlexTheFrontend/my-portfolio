@@ -26,6 +26,8 @@ export default function Post() {
       .catch((err) => console.log(err));
   }, []);
 
+
+
   return (
     <main className="bg-green-100 min-h-screen p-12">
       <section className="container mx-auto">
@@ -53,10 +55,6 @@ export default function Post() {
                       <h3 className="text-grey-800 text-lg font-blog px-3 bg-red-700 text-red-100 bg-opacity-75 rounded">
                         {post.title}
                       </h3>
-                      {/* TODO Check the right rendering */}
-                      <BlockContent>
-                        {post.data}
-                      </BlockContent>
                     </span>
                   </span>
                 </Link>

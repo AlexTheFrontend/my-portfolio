@@ -60,7 +60,7 @@ export default function About() {
               <div className="cursive text-4xl text-white">
                 <BlockContent
                   blocks={author.bio}
-                  projprojectId="iacy8q5t"
+                  projectId="iacy8q5t"
                   dataset="production"
                 />
               </div>
