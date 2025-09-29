@@ -1,6 +1,7 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import sanityClient from "../client.js";
 import image from "../images/bg4.jpeg";
+import DarkVeil from "./bg-lib/dark-veil";
 
 export default function Project() {
   const [projectData, setProjectData] = useState(null);
@@ -53,11 +54,12 @@ export default function Project() {
   };
   return (
     <main className="bg-gree-100 min-h-screen">
-      <img
-        src={image}
-        alt="Auckland city"
-        className="absolute object-cover w-full h-full p-0"
-      />
+      <div style={{ width: '100%', height: '900px', position: 'absolute' }}>
+        <DarkVeil
+         speed={1.5}
+         hueShift={236}
+         />
+      </div>
       <section className="container mx-auto relative z-10">
         <h1 className="text-5xl text-white flex justify-center cursive">My Projects</h1>
         <section className="grid grid-cols-2 gap-8">
