@@ -61,7 +61,7 @@ export default function Project() {
          />
       </div>
       <section className="container mx-auto relative z-10">
-        <h1 className="text-5xl text-white flex justify-center cursive">My Projects</h1>
+        <h1 className="text-5xl text-white flex justify-center cursive p-4">My Projects</h1>
         <section className="grid grid-cols-2 gap-8">
           {currentProjects.map((project) => (
               <article key={project.title} className="relative rounded-lg shadow-xl bg-white p-16">
