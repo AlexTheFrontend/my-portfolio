@@ -59,10 +59,7 @@ export default function Project() {
         className="absolute object-cover w-full h-full p-0"
       />
       <section className="container mx-auto relative z-10">
-        <h1 className="text-5xl flex justify-center cursive">My Projects</h1>
-        <h2 className="text-lg text-gray-600 flex justify-center mb-12">
-          Welcome to my project's page!
-        </h2>
+        <h1 className="text-5xl text-white flex justify-center cursive">My Projects</h1>
         <section className="grid grid-cols-2 gap-8">
           {currentProjects.map((project) => (
               <article key={project.title} className="relative rounded-lg shadow-xl bg-white p-16">
